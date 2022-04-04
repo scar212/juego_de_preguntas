@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones matématicas</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+</head>
+<body>
+    <div class="container-principal" id="container-principal">
+        <img src="https://tita-design.com/wp-content/uploads/2022/04/questions.png" id="image-001">
+        <h1 id="titulo-juego">¿Sabes?</h1>
+        <p id="p-principal">Juego de preguntas</p>
+        <input type="button" value="Jugar" class="boton-juego-1" id="boton-juego-1">
+    </div>
+    <div class="container-participante" id="container-participante">
+        <img src="https://tita-design.com/wp-content/uploads/2022/04/questions.png" id="image-001">
+        <h1 id="titulo-juego">¿Sabes?</h1>
+        <p id="titulo-participante">¿Cuál es tu nombre?</p>
+        <input type="text" placeholder="Nombre (en minúsculas)" class="campo-nombre" id="campo-nombre" pattern="[a-z]*">
+        <input type="button" value="¡Listo!" class="boton-participante" id="boton-participante">
+    </div>
+    <div class="container-introduccion" id="container-introduccion">
+        <img src="https://tita-design.com/wp-content/uploads/2022/04/questions.png" id="image-001">
+        <h1 class="titulo-juego" id="titulo-juego">¿Sabes?</h1>
+        <h1 id="titulo-introducción">¡Bienvenido/a</h1>
+        <p class="p-nombre" id="p-nombre"></p>
+        <h4 id="subtitulo-instrucciones">Intrucciones</h4>
+        <p id="p-instrucciones">Primero elige la categoría.
+            <br>Vas a tener 3 preguntas
+            <br> Si respondes 2 malas pierdes.
+        </p>
+        <img src="https://tita-design.com/wp-content/uploads/2022/04/play-button.png" id="image-002" class="image-002">
+    </div>
+    <div class="container-categoria" id="container-categoria">
+        <img src="https://tita-design.com/wp-content/uploads/2022/04/questions.png" id="image-001">
+        <h1 class="titulo-juego" id="titulo-juego">¿Sabes?</h1>
+        <h3>Categorías: Elige una</h3>
+        <input type="button" value="Historia" class="catg-historia" id="catg-historia">
+        <input type="button" value="Matemáticas" class="catg-matematicas" id="catg-matematicas">
+    </div>
+    <div class="container-preguntas" id="container-preguntas">
+        <div class="grupo-preguntas-historia" id="grupo-preguntas-historia">
+            <h3>Categoría: Historia</h3>
+            <div class="preguntas-historia-1" id="preguntas-historias-1">
+                <p><b>1. ¿En que año hubo la explosión del reactor de la planta nuclear de Chernobyl?</b></p>
+                <p>a) 1950    b) 1860   c) 1986 </a></p>
+                <input type="text" placeholder="Ingresa la opción de tu respuesta" class="texto-pregunta-historia-1" id="texto-pregunta-historia-1" required>
+            </div>
+            <div class="preguntas-historia-2" id="preguntas-historias-2">
+                <p><b>2. ¿En que país nació Hitler?</b></p>
+                <p>a) Alemania      b) Rusia      c) Austria</p>
+                <input type="text" placeholder="Ingresa la opción de tu respuesta" class="texto-pregunta-historia-2" id="texto-pregunta-historia-2">
+            </div>
+            <div class="preguntas-historia-" id="preguntas-historias-3">
+                <p><b>3. ¿En que año fue la guerra fría?</b></p>
+                <p>a) 1950      b) 1947     c) 1960</p>
+                <input type="text" placeholder="Ingresa la opción de tu respuesta" class="texto-pregunta-historia-3" id="texto-pregunta-historia-3">
+            </div>
+            <input type="button" value="Enviar respuestas" class="boton-enviar-h" id="boton-enviar-h">
+        </div>
+        <div class="grupo-preguntas-matematicas" id="grupo-preguntas-matematicas">
+            <h3>Categoría: Matemáticas</h3>
+            <div class="preguntas-matematicas-1" id="preguntas-matematicas-1">
+                <p><b>Es la razón de cambio instantánea, con la que varía el valor de una función</b> </p>
+                <p>a) derivada    b) fórmula   c) radical </p>
+                <input type="text" placeholder="Ingresa la opción de tu respuesta" class="texto-pregunta-matematicas-1" id="texto-pregunta-matematicas-1">
+            </div>
+            <div class="preguntas-matematicas-2" id="preguntas-matematicas-2">
+                <p><b>¿Cuánto equivale Pi?</b></p>
+                <p>a) 3.1     b) 3.15     c) 3.14</p>
+                <input type="text" placeholder="Ingresa la opción de tu respuesta" class="texto-pregunta-matematicas-2" id="texto-pregunta-matematicas-2">
+            </div>
+            <div class="preguntas-matematicas-3" id="preguntas-matematicas-3">
+                <p><b>¿Que expresa esta fórmula -> e = mc^2?</b></p>
+                <p>a) La teoría de la probabilidad      b) Circunferencia de un círculo   c) Equivalencia entre masa y energía</p>
+                <input type="text" placeholder="Ingresa la opción de tu respuesta" class="texto-pregunta-matematicas-3" id="texto-pregunta-matematicas-3">
+            </div>
+            <input type="button" value="Enviar respuestas" class="boton-enviar-m" id="boton-enviar-m">
+        </div>
+    </div>
+    <div class="container-respuesta" id="container-respuesta">
+        <img src="https://tita-design.com/wp-content/uploads/2022/04/questions.png" id="image-001">
+        <h1 class="titulo-juego" id="titulo-juego">¿Sabes?</h1>
+        <p class="texto-respuesta" id="texto-respuesta"></p>
+    </div>
+    <script src="js/seccion.js"></script>
+</body>
+</html>

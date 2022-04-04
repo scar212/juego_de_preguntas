@@ -1,0 +1,590 @@
+#container-principal{
+    display: block;
+}
+#image-001{
+    display: block;
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    top: 100px;
+    left: 600px;
+}
+#titulo-juego{
+    display: block;
+    position: absolute;
+    top: 270px;
+    left: 690px;
+    font-family: 'Montserrat';
+    font-size: 50px;
+}
+#p-principal{
+    display: block;
+    position: absolute;
+    top: 350px;
+    left: 700px;
+    font-family: 'Montserrat';
+    font-size: 20px;;
+}
+#boton-juego-1{
+    display: block;
+    position: absolute;
+    top: 450px;
+    left: 680px;
+    padding: 20px 80px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    border-radius: 6px;
+    background-color: #ff1036;
+    color: #fff;
+    border: 6px #f1a55d solid;
+}
+#boton-juego-1:hover{
+    background-color: #cde5c4;
+    -webkit-transition: background-color 300ms linear;
+    color: black;
+    -webkit-transition: color 300ms linear;
+    border: 6px #26db90 solid;
+    -webkit-transition: border 300ms linear;
+}
+#titulo-participante{
+    display: block;
+    position: absolute;
+    top: 200px;
+    left: 650px;
+    font-family: 'Montserrat';
+    font-size: 30px;
+}
+#campo-nombre{
+    display: block;
+    position: absolute;
+    top: 320px;
+    left: 645px;
+    padding: 15px 30px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #f1a55d;
+    color: #fff;
+    border: 3px #f1a55d solid;
+}
+#campo-nombre:invalid{
+    animation: agitar 300ms;
+}    
+@keyframes agitar{
+    25% {
+        transform: translateX(10px);
+    }
+    50% {
+        transform: translateX(-10px);
+    }
+    75% {
+        transform: translateX(10px);
+    }
+}
+#boton-participante{
+    display: block;
+    position: absolute;
+    top: 450px;
+    left: 680px;
+    padding: 20px 80px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    border-radius: 6px;
+    background-color: #0db6be;
+    color: #fff;
+    border: 6px #1073e6 solid;
+}
+#boton-participante:hover{
+    background-color: #cde5c4;
+    -webkit-transition: background-color 300ms linear;
+    color: black;
+    -webkit-transition: color 300ms linear;
+    border: 6px #26db90 solid;
+    -webkit-transition: border 300ms linear;
+}
+.container-participante{
+    display: none;
+}
+#container-participante img{
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 730px;
+    width: 150px;
+    height: 100px;
+}
+#container-participante h1{
+    display: block;
+    position: absolute;
+    top: 145px;
+    left: 760px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+#container-introduccion{
+    display: none;
+}
+#titulo-introducción{
+    display: block;
+    position: absolute;
+    top:150px;
+    left:550px;
+    font-family: 'Montserrat';
+    font-size: 70px;
+    animation: aparecer 1000ms;
+}
+@keyframes aparecer{
+    75%{
+    transform: scale(1.1);
+    }
+}
+@keyframes movilizar-1{
+    20%{
+        position: absolute;
+        top: 340px;
+        left: 0px;
+    }
+    40%{
+        position: absolute;
+        top: 340px;
+        left: 150px;
+    }
+    60%{
+        position: absolute;
+        top: 340px;
+        left: 350px;
+    }
+    80%{
+        position: absolute;
+        top: 340px;
+        left: 550px;
+    }
+    100%{
+        position: absolute;
+        top: 340px;
+        left: 730px;
+    }
+}
+@keyframes movilizar-2{
+    20%{
+        position: absolute;
+        top: 400px;
+        left: 1400px;
+    }
+    40%{
+        position: absolute;
+        top: 400px;
+        left: 1100px;
+    }
+    60%{
+        position: absolute;
+        top: 400px;
+        left: 900px;
+    }
+    80%{
+        position: absolute;
+        top: 400px;
+        left: 800px;
+    }
+    100%{
+        position: absolute;
+        top: 400px;
+        left: 700px;
+    }
+}
+@keyframes escalar{
+    20%{
+        width: 20px;
+        height: 20px;
+    }
+    40%{
+        width: 40px;
+        height: 40px;
+    }
+    60%{
+        width: 60px;
+        height: 60px;
+    }
+    80%{
+        width: 80px;
+        height: 80px;;
+    }
+    100%{
+        width: 100px;
+        height: 100px;
+    }
+}
+#p-nombre{
+    display: block;
+    position: absolute;
+    top: 200px;
+    left: 580px;
+    font-family: 'Montserrat';
+    font-size: 70px;
+    font-weight: bold;
+    animation: aparecer 1000ms;
+}
+.container-introduccion #image-001{
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 730px;
+    width: 150px;
+    height: 100px;
+}
+.container-introduccion #titulo-juego{
+    display: block;
+    position: absolute;
+    top: 145px;
+    left: 760px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+#subtitulo-instrucciones{
+    display: block;
+    position: absolute;
+    top: 340px;
+    left: 730px ;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    animation: movilizar-1 500ms;
+}
+#p-instrucciones{
+    display: block;
+    position: absolute;
+    top: 400px;
+    left: 700px ;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    animation: movilizar-2 500ms;
+}
+#image-002{
+    display: block;
+    position: absolute;
+    top: 500px;
+    left: 770px;
+    width: 80px;
+    height: 80px;
+    animation: escalar 1000ms;
+}
+#image-002:hover{
+    transform: scale(1.1);
+    box-shadow: 10px #000;
+}
+#container-categoria{
+    display: none;
+}
+#catg-historia{
+    display: block;
+    position: relative;
+    top: 300px;
+    left: 625px;
+    padding: 10px 130px;
+    border-radius: 10px;
+    border: 5px #f1a55d solid;
+    background-color: #ff1036;
+    color: #fff;
+}
+#catg-matematicas{
+    display: block;
+    position: relative;
+    top: 350px;
+    left: 625px;
+    padding: 10px 115px;
+    border-radius: 10px;
+    border: 5px #f1a55d solid;
+    background-color: #ff1036;
+    color: #fff;
+}
+.container-categoria #image-001{
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 730px;
+    width: 150px;
+    height: 100px;
+}
+.container-categoria #titulo-juego{
+    display: block;
+    position: absolute;
+    top: 145px;
+    left: 760px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+.container-categoria h3{
+    display: block;
+    position: absolute;
+    top: 160px;
+    left: 580px;
+    font-family: 'Montserrat';
+    font-size: 40px;
+}
+#catg-historia:hover{
+    background-color: #cde5c4;
+    -webkit-transition: background-color 300ms linear;
+    color: black;
+    -webkit-transition: color 300ms linear;
+    border: 6px #26db90 solid;
+    -webkit-transition: border 300ms linear;
+}
+#catg-matematicas:hover{
+    background-color: #cde5c4;
+    -webkit-transition: background-color 300ms linear;
+    color: black;
+    -webkit-transition: color 300ms linear;
+    border: 6px #26db90 solid;
+    -webkit-transition: border 300ms linear;
+}
+.grupo-preguntas-historia{
+    display: block;
+    position: absolute;
+    top: 20px;;
+    left: 480px;
+    text-align: center;
+    display: none;
+}
+.grupo-preguntas-historia p{
+    font-family: 'Montserrat';
+    font-size: 15px;
+    padding: 10px 20px;
+}
+.grupo-preguntas-historia h3{
+    font-family: 'Montserrat';
+    font-size: 40px;
+    padding: 15px 0px;
+}
+#texto-pregunta-historia-1{
+    padding: 5px 0px;
+    border-radius: 10px;
+    background-color: #f1a55d;
+    color: #fff;
+    border: 3px #f1a55d solid;
+}
+#texto-pregunta-historia-2{
+    padding: 5px 0px;
+    border-radius: 10px;
+    background-color: #f1a55d;
+    color: #fff;
+    border: 3px #f1a55d solid;
+}
+#texto-pregunta-historia-3{
+    padding: 5px 0px;
+    border-radius: 10px;
+    background-color: #f1a55d;
+    color: #fff;
+    border: 3px #f1a55d solid;
+}
+#boton-enviar-h{
+    margin: 30px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    background-color: #0db6be;
+    color: #fff;
+    border: 2px #1073e6 solid;
+    font-size: 20px;
+}
+#boton-enviar-h:hover{
+    background-color: #cde5c4;
+    -webkit-transition: background-color 300ms linear;
+    color: black;
+    -webkit-transition: color 300ms linear;
+    border: 6px #26db90 solid;
+    -webkit-transition: border 300ms linear;
+}
+.grupo-preguntas-matematicas{
+    display: block;
+    position: absolute;
+    top: 20px;;
+    left: 410px;
+    text-align: center;
+    display: none;
+}
+.grupo-preguntas-matematicas p{
+    font-family: 'Montserrat';
+    font-size: 15px;
+    padding: 10px 20px;
+}
+.grupo-preguntas-matematicas h3{
+    font-family: 'Montserrat';
+    font-size: 40px;
+    padding: 15px 0px;
+}
+#texto-pregunta-matematicas-1{
+    padding: 5px 0px;
+    border-radius: 10px;
+    background-color: #f1a55d;
+    color: #fff;
+    border: 3px #f1a55d solid;
+}
+#texto-pregunta-matematicas-2{
+    padding: 5px 0px;
+    border-radius: 10px;
+    background-color: #f1a55d;
+    color: #fff;
+    border: 3px #f1a55d solid;
+}
+#texto-pregunta-matematicas-3{
+    padding: 5px 0px;
+    border-radius: 10px;
+    background-color: #f1a55d;
+    color: #fff;
+    border: 3px #f1a55d solid;
+}
+#boton-enviar-m{
+    margin: 30px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    background-color: #0db6be;
+    color: #fff;
+    border: 2px #1073e6 solid;
+    font-size: 20px;
+}
+#boton-enviar-m:hover{
+    background-color: #cde5c4;
+    -webkit-transition: background-color 300ms linear;
+    color: black;
+    -webkit-transition: color 300ms linear;
+    border: 6px #26db90 solid;
+    -webkit-transition: border 300ms linear;
+}
+.container-respuesta{
+    display: none;
+    position: absolute;
+    top: 150px;
+    left: 500px;
+}
+.container-respuesta #image-001{
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: -200px;
+    width: 150px;
+    height: 100px;
+}
+.container-respuesta #titulo-juego{
+    display: block;
+    position: absolute;
+    top: 80px;
+    left: -170px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+.texto-respuesta{
+    font-family: 'Montserrat';
+    font-size: 40px;
+}
+@media screen and (max-width:380px){
+.container-principal{
+    display: block;
+    position: absolute;
+    top: -50px;
+    left: -610px;
+}
+.container-principal #image-001{
+    width: 300px;
+    height: 150px;
+    position: fixed;
+    left: 50px;
+}
+#p-principal{
+    display: inline-block;
+    position: relative;
+    top: 370px;
+    text-align: center;
+}
+.container-participante{
+    position: absolute;
+    top: 10px;
+    left:-600px;
+}
+#titulo-participante{
+    display: inline-block;
+    position: relative;
+}
+.container-introduccion{
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: -600px;
+}
+#titulo-introducción{
+    position: fixed;
+    left:50px;
+    font-size: 40px;
+    margin-top: 100px;
+}
+#p-instrucciones{
+    display: inline-block;
+    position: relative;
+}
+#p-nombre{
+    position: fixed;
+    left:50px;
+    font-size: 40px;
+    margin-top: 120px;
+}
+#image-002{
+    width: 40px;
+    height: 40px;
+}
+.container-categoria{
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: -600px;
+}
+.container-categoria h3{
+    font-size: 20px;
+    display: inline-block;
+    position: fixed;
+    left: 90px;
+    top: 210px
+}
+#catg-historia{
+    left:620px
+}
+#catg-matematicas{
+    left: 620px;
+}
+.grupo-preguntas-historia{
+    display: noen;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+}
+.grupo-preguntas-matematicas{
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+}
+.container-respuesta{
+    position: fixed;
+    left: 200px;
+}
+.container-respuesta #image-001{
+    position: absolute;
+    top: -140px;
+    left: -80px;
+}
+.container-respuesta #titulo-juego{
+    position: absolute;
+    top: -50px;
+    left: -50px;
+}
+#texto-respuesta{
+    display: inline-block;
+    position: fixed;
+    left: 50px;
+}
+#campo-nombre{
+    padding: 10px 0px;
+
+}
+.container-participante #image-001{
+    position: absolute;
+    left: 10px;
+}
+
+}
